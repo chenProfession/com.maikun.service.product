@@ -1,0 +1,29 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /maikun
+logging:
+  file: ~/Desktop/JavaTraining/products/helloworld.log
+  level:
+     com.maikun.service.buyer.helloworld.HelloWorldController: debug
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  jackson:
+      default-property-inclusion: non_null
+  datasource:
+      #driver-class-name: com.mysql.jdbc.Driver
+      username: chen
+      password: hsbc
+      url: jdbc:mysql://193.112.35.196:3306/ordersys?characterEncoding=utf-8&useSSL=false
+
+# JWT 认证配置
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 604800 #token七天不过期
+  tokenHead: "Bearer "
+  exceptUrl: "/auth/**"
