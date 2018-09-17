@@ -1,6 +1,7 @@
 package com.maikun.service.buyer.result;
 
 import com.maikun.service.buyer.enums.ResultEnum;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 /**
@@ -35,6 +36,7 @@ public class ResultServiceImpl implements ResultService {
      * @Date: 2018/9/11 下午4:25
      */
     @Override
+    @Async
     public ResultVO success() {
         ResultVO resultVO = new ResultVO();
         resultVO.setCode(ResultEnum.SUCCESS.getCode());

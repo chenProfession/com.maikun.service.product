@@ -1,6 +1,5 @@
 package com.maikun.service.buyer.helloworld;
 
-import com.maikun.service.buyer.enums.ResultEnum;
 import com.maikun.service.buyer.result.ResultService;
 import com.maikun.service.buyer.result.ResultVO;
 import lombok.extern.slf4j.Slf4j;
@@ -28,6 +27,9 @@ public class HelloWorldController {
     @Autowired
     private ResultService resultService;
 
+    @Autowired
+    private HelloWorldService helloWorldService;
+
     /**
     * @Description: 测试服务是否可以正常运行
     * @Param: [response]
@@ -48,7 +50,7 @@ public class HelloWorldController {
 
     @GetMapping(path = "/result")
     public ResultVO getResult(HttpServletResponse response) {
-
+        helloWorldService.sayHello();
         response.addHeader("Access-Control-Allow-Origin", "*");
         response.addHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
         return resultService.success();

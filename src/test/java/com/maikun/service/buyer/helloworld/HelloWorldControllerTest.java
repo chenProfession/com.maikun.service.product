@@ -28,6 +28,9 @@ public class HelloWorldControllerTest {
     @MockBean
     private ResultService resultService;
 
+    @MockBean
+    private HelloWorldService helloWorldService;
+
     @Test
     public void testSayHello() throws Exception {
         this.mvc.perform(get("/hello/sayhello").accept(MediaType.TEXT_PLAIN))
@@ -38,6 +41,7 @@ public class HelloWorldControllerTest {
     @Test
     public void testGetResult() throws Exception {
         given(this.resultService.success()).willReturn(new ResultVO(0,"success"));
+        given(this.helloWorldService.sayHello()).willReturn("hello");
         String result = this.mvc.perform(get("/hello/result").accept(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isOk())
                 .andReturn().getResponse().getContentAsString();
