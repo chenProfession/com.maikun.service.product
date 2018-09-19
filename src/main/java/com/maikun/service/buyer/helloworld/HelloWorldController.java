@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.request.async.DeferredResult;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -71,4 +72,17 @@ public class HelloWorldController {
         return  "success";
     }
 
+    /**
+    * @Description: 测试异步
+    * @Param: []
+    * @return: org.springframework.web.context.request.async.DeferredResult<java.lang.String>
+    * @Author: Mr.Cheng
+    * @Date: 2018/9/17 下午11:20
+    */
+    @GetMapping(path = "/async-order")
+    public DeferredResult<String> readList(){
+        log.info("外部线程：[{}]",Thread.currentThread().getName());
+        DeferredResult<String> result = new DeferredResult<>();
+        return result;
+    }
 }
