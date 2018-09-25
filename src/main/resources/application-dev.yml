@@ -8,6 +8,20 @@ logging:
      com.maikun.service.buyer.helloworld.HelloWorldController: debug
 
 spring:
+  rabbitmq:
+      host: 193.112.35.196
+      port: 5672
+      username: guest
+      password: guest
+      # 消息发送到交换机确认机制,是否确认回调
+      publisher-confirms: true
+      # 开启发送失败退回
+      publisher-returns: true
+      # 开启ACK
+      #listener.direct.acknowledge-mode=manual
+      #listener.simple.acknowledge-mode=manual
+
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -19,6 +33,14 @@ spring:
       username: chen
       password: hsbc
       url: jdbc:mysql://193.112.35.196:3306/ordersys?characterEncoding=utf-8&useSSL=false
+
+#RabbitMQ Exchang and Queue name
+mq:
+  requestProductsQueue: requestProductsQueue
+  responseProductsQueue: responseProductsQueue
+  productDirectExchange: productDirectExchange
+  requestProductsQueueRoutingKey: request-product-list
+  responseProductsQueueRoutingKey: response-product-list
 
 # JWT 认证配置
 jwt:

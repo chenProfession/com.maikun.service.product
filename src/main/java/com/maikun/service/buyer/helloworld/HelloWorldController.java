@@ -1,15 +1,19 @@
 package com.maikun.service.buyer.helloworld;
 
+import com.maikun.service.buyer.asynctask.DeferredResultHolder;
 import com.maikun.service.buyer.result.ResultService;
 import com.maikun.service.buyer.result.ResultVO;
+import com.maikun.service.buyer.sender.FirstSender;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.async.DeferredResult;
 
 import javax.servlet.http.HttpServletResponse;
+import java.util.UUID;
 
 /**
  * @program: products
@@ -30,6 +34,12 @@ public class HelloWorldController {
 
     @Autowired
     private HelloWorldService helloWorldService;
+
+    @Autowired
+    private FirstSender firstSender;
+
+    @Autowired
+    private DeferredResultHolder deferredResultHolder;
 
     /**
     * @Description: 测试服务是否可以正常运行
@@ -79,10 +89,28 @@ public class HelloWorldController {
     * @Author: Mr.Cheng
     * @Date: 2018/9/17 下午11:20
     */
-    @GetMapping(path = "/async-order")
-    public DeferredResult<String> readList(){
+    @GetMapping(path = "/")
+    public DeferredResult<ResultVO> readList(){
         log.info("外部线程：[{}]",Thread.currentThread().getName());
-        DeferredResult<String> result = new DeferredResult<>();
+        /** 模拟用户ID */
+        String uuid = UUID.randomUUID().toString();
+
+        /** 模拟用户ID */
+        String restaurantId = "daWeiWang";
+
+        firstSender.send(uuid,restaurantId);
+
+        DeferredResult<ResultVO> result = new DeferredResult<ResultVO>();
+
+        deferredResultHolder.getMap().put(uuid,result);
+
         return result;
+    }
+
+    @GetMapping("/send")
+    public String send(@RequestParam(name = "message") String message){
+        String uuid = UUID.randomUUID().toString();
+        firstSender.send(uuid,message);
+        return uuid;
     }
 }

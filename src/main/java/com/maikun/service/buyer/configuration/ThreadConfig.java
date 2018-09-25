@@ -18,7 +18,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  * @date: 2018/9/17 上午1:57
  */
 @Configuration
-@EnableAsync
+//@EnableAsync
 @Slf4j
 public class ThreadConfig implements AsyncConfigurer{
 
