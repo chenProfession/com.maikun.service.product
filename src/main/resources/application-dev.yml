@@ -3,7 +3,7 @@ server:
   servlet:
     context-path: /maikun
 logging:
-  file: ~/Desktop/JavaTraining/products/helloworld.log
+  file: /Users/chengchen/Desktop/JavaTraining/products/helloworld.log
   level:
      com.maikun.service.buyer.helloworld.HelloWorldController: debug
 
