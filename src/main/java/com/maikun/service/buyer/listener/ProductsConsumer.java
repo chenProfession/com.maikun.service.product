@@ -1,4 +1,4 @@
-package com.maikun.service.buyer.receiver;
+package com.maikun.service.buyer.listener;
 
 import com.maikun.service.buyer.asynctask.DeferredResultService;
 import com.maikun.service.buyer.result.ResultService;
@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Slf4j
-public class FirstConsumer {
+public class ProductsConsumer {
 
     @Autowired
     private DeferredResultService deferredResultService;
@@ -38,22 +38,26 @@ public class FirstConsumer {
     @RabbitListener(queues = "requestProductsQueue", containerFactory = "containerFactory")
     public void processMessage(Message message, Channel channel) throws Exception {
         /** 处理消息 */
-        log.info("FirstConsumer handleMessage :[{}]",message.getBody().toString());
+        log.info("FirstConsumer handleMessage :[{}]",new String(message.getBody()));
 
         /** 查找对应商店ID的产品列表 */
-        log.info("根据商店ID查找产品列表 :[{}]");
         ResultVO resultVO = resultService.success();
 
         /** 获取对应用户的DeferredResult */
-        if(deferredResultService.makeDeferredResult(message.getMessageProperties().getCorrelationId(),resultVO)){
-            log.info("set the result");
+        try{
+            if(deferredResultService.makeDeferredResult(message.getMessageProperties().getCorrelationId(),resultVO)){
+                log.info("set the result");
+                /**
+                 * 那么当收到消息后，如果要否认，或确认则通过调用channel对象的下面的两个方法即可,
+                 * 其中basicAck进行确认,
+                 * 而basicNack进行否认.
+                 */
+                channel.basicAck(message.getMessageProperties().getDeliveryTag(),false);
+            }
+        }catch (Exception e){
+            log.error("can not receive the message",e);
+            channel.basicNack(message.getMessageProperties().getDeliveryTag(),false,false);
         }
 
-        /**
-         * 那么当收到消息后，如果要否认，或确认则通过调用channel对象的下面的两个方法即可,
-         * 其中basicAck进行确认,
-         * 而basicNack进行否认.
-         */
-        channel.basicAck(message.getMessageProperties().getDeliveryTag(),false);
     }
 }

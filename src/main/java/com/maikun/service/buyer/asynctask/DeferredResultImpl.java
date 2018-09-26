@@ -54,9 +54,11 @@ public class DeferredResultImpl implements DeferredResultService{
 
     @Override
     public boolean removeDeferredResult(String userId) {
+        boolean remove = false;
         if(deferredResultHolder.getMap().containsKey(userId)){
             try{
                 deferredResultHolder.getMap().remove(userId);
+                remove = true;
             }catch(Exception e){
                 log.error("can not delete the result",e);
             }
@@ -65,6 +67,6 @@ public class DeferredResultImpl implements DeferredResultService{
             log.warn("can not find the result to delete in the holder");
         }
 
-        return false;
+        return remove;
     }
 }

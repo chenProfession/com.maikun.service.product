@@ -3,6 +3,7 @@ package com.maikun.service.buyer.sender;
 import com.google.gson.Gson;
 import com.maikun.service.buyer.asynctask.DeferredResultHolder;
 import com.maikun.service.buyer.asynctask.DeferredResultService;
+import com.maikun.service.buyer.result.ResultService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageBuilder;
@@ -22,7 +23,7 @@ import org.springframework.web.context.request.async.DeferredResult;
  */
 @Component
 @Slf4j
-public class FirstSender {
+public class ProductsSender {
 
     @Value("${mq.productDirectExchange}")
     private String productDirectExchangeName;
@@ -36,25 +37,28 @@ public class FirstSender {
     @Autowired
     private DeferredResultService deferredResultService;
 
-    public void send(String uuid, DeferredResult result,Object message) {
+    @Autowired
+    private ResultService resultService;
+
+    public void send(CorrelationData correlationId, DeferredResult result,Object message) {
         log.info("Exchange:[{}],Queue Key:[{}]",productDirectExchangeName,requestProductsQueueRoutingKey);
-        /** 将 msgId和 CorrelationData绑定 */
-        CorrelationData correlationId = new CorrelationData(uuid);
 
         /** 将 msgId和 message绑定 */
         Gson gson = new Gson();
         String json = gson.toJson(message);
         Message messageSend = MessageBuilder.withBody(json.getBytes())
                 .setContentType(MessageProperties.CONTENT_TYPE_JSON)
-                .setCorrelationId(uuid).build();
+                .setCorrelationId(correlationId.getId()).build();
 
-        deferredResultService.saveDeferredResult(correlationId.getId(),result);
-        log.info("保存DeferredResult : [{}]",correlationId.getId());
-
-        rabbitTemplate.convertAndSend(productDirectExchangeName, requestProductsQueueRoutingKey,
-                messageSend, correlationId);
-
-        log.info("it is sent into the queue");
+        if(deferredResultService.saveDeferredResult(correlationId.getId(),result)){
+            log.info("save DeferredResult : [{}]",correlationId.getId());
+            rabbitTemplate.convertAndSend(productDirectExchangeName, requestProductsQueueRoutingKey,
+                    messageSend, correlationId);
+            log.info("it is sent into the queue");
+        }else {
+            log.warn("message already in the queue");
+            result.setResult(resultService.error());
+        }
     }
 
     public void send(String uuid,Object message) {

@@ -66,7 +66,7 @@ public class RabbitMqConfig {
         cachingConnectionFactory.setAddresses("193.112.35.196:5672");
         cachingConnectionFactory.setUsername("guest");
         cachingConnectionFactory.setPassword("guest");
-        cachingConnectionFactory.setChannelCacheSize(10);
+        cachingConnectionFactory.setChannelCacheSize(100);
         cachingConnectionFactory.setConnectionLimit(3);
         cachingConnectionFactory.setConnectionTimeout(30000);
         cachingConnectionFactory.setPublisherConfirms(true);
@@ -77,8 +77,15 @@ public class RabbitMqConfig {
     @Bean
     public SimpleRabbitListenerContainerFactory containerFactory(SimpleRabbitListenerContainerFactoryConfigurer configurer){
         SimpleRabbitListenerContainerFactory factory=new SimpleRabbitListenerContainerFactory();
+
+        /** 设置消费者线程数 */
         factory.setConcurrentConsumers(500);
-        factory.setPrefetchCount(5);
+
+        /** 这个参数设置，接收消息端，接收的最大消息数量（包括使用get、consume）,
+         * 一旦到达这个数量，客户端不在接收消息。
+         * 0为不限制。默认值为3
+         */
+        factory.setPrefetchCount(20);
         configurer.configure(factory,rabbitConnectionFactory());
         return factory;
     }

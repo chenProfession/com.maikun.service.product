@@ -61,4 +61,19 @@ public class ResultServiceImpl implements ResultService {
         return resultVO;
     }
 
+    /**
+     * @Description: 设置错误返回信息
+     * @Param: [code, message]
+     * @return: com.maikun.service.buyer.result.ResultVO
+     * @Author: Mr.Cheng
+     * @Date: 2018/9/11 下午4:25
+     */
+    @Override
+    public ResultVO error() {
+        ResultVO resultVO = new ResultVO();
+        resultVO.setCode(ResultEnum.FAILED.getCode());
+        resultVO.setMsg(ResultEnum.FAILED.getMessage());
+        return resultVO;
+    }
+
 }

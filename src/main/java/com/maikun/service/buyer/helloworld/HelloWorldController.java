@@ -1,10 +1,13 @@
 package com.maikun.service.buyer.helloworld;
 
-import com.maikun.service.buyer.asynctask.DeferredResultHolder;
+import com.maikun.service.buyer.asynctask.CompletionWork;
+import com.maikun.service.buyer.asynctask.DeferredResultService;
+import com.maikun.service.buyer.asynctask.TimeOutWork;
 import com.maikun.service.buyer.result.ResultService;
 import com.maikun.service.buyer.result.ResultVO;
-import com.maikun.service.buyer.sender.FirstSender;
+import com.maikun.service.buyer.sender.ProductsSender;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.rabbit.support.CorrelationData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -36,8 +39,10 @@ public class HelloWorldController {
     private HelloWorldService helloWorldService;
 
     @Autowired
-    private FirstSender firstSender;
+    private ProductsSender productsSender;
 
+    @Autowired
+    private DeferredResultService deferredResultService;
 
     /**
     * @Description: 测试服务是否可以正常运行
@@ -92,14 +97,19 @@ public class HelloWorldController {
         log.info("外部线程：[{}]",Thread.currentThread().getName());
         /** 模拟用户ID */
         String uuid = UUID.randomUUID().toString();
-        log.info("得到用户ID ：[{}]",uuid);
+
+        /** 将 msgId和 CorrelationData绑定 */
+        CorrelationData correlationId = new CorrelationData(uuid);
+        log.info("得到用户ID ：[{}]",correlationId.getId());
 
         /** 模拟用户ID */
         String restaurantId = "daWeiWang";
+
         /** 设置timeout时间 */
         DeferredResult<ResultVO> result = new DeferredResult<>(30000L);
-
-        firstSender.send(uuid,result,restaurantId);
+        result.onTimeout(new TimeOutWork(result));
+        result.onCompletion(new CompletionWork(correlationId.getId(),deferredResultService));
+        productsSender.send(correlationId,result,restaurantId);
 
         return result;
     }
@@ -107,7 +117,7 @@ public class HelloWorldController {
     @GetMapping("/send")
     public String send(@RequestParam(name = "message") String message){
         String uuid = UUID.randomUUID().toString();
-        firstSender.send(uuid,message);
+        productsSender.send(uuid,message);
         return uuid;
     }
 }

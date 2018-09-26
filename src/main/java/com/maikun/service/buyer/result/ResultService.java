@@ -34,4 +34,13 @@ public interface ResultService {
      * @Date: 2018/9/11 下午4:25
      */
     ResultVO error(Integer code, String message);
+
+    /**
+     * @Description: 设置错误返回信息
+     * @Param: []
+     * @return: com.maikun.service.buyer.result.ResultVO
+     * @Author: Mr.Cheng
+     * @Date: 2018/9/11 下午4:25
+     */
+    ResultVO error();
 }
