@@ -1,6 +1,8 @@
 package com.maikun.service.buyer.sender;
 
 import com.google.gson.Gson;
+import com.maikun.service.buyer.asynctask.DeferredResultHolder;
+import com.maikun.service.buyer.asynctask.DeferredResultService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.MessageBuilder;
@@ -10,6 +12,7 @@ import org.springframework.amqp.rabbit.support.CorrelationData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.request.async.DeferredResult;
 
 /**
  * @program: products
@@ -29,6 +32,30 @@ public class FirstSender {
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
+
+    @Autowired
+    private DeferredResultService deferredResultService;
+
+    public void send(String uuid, DeferredResult result,Object message) {
+        log.info("Exchange:[{}],Queue Key:[{}]",productDirectExchangeName,requestProductsQueueRoutingKey);
+        /** 将 msgId和 CorrelationData绑定 */
+        CorrelationData correlationId = new CorrelationData(uuid);
+
+        /** 将 msgId和 message绑定 */
+        Gson gson = new Gson();
+        String json = gson.toJson(message);
+        Message messageSend = MessageBuilder.withBody(json.getBytes())
+                .setContentType(MessageProperties.CONTENT_TYPE_JSON)
+                .setCorrelationId(uuid).build();
+
+        deferredResultService.saveDeferredResult(correlationId.getId(),result);
+        log.info("保存DeferredResult : [{}]",correlationId.getId());
+
+        rabbitTemplate.convertAndSend(productDirectExchangeName, requestProductsQueueRoutingKey,
+                messageSend, correlationId);
+
+        log.info("it is sent into the queue");
+    }
 
     public void send(String uuid,Object message) {
         log.info("Exchange:[{}],Queue Key:[{}]",productDirectExchangeName,requestProductsQueueRoutingKey);

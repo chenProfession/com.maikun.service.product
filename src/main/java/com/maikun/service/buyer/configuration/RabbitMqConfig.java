@@ -1,19 +1,18 @@
 package com.maikun.service.buyer.configuration;
 
-import com.maikun.service.buyer.receiver.FirstConsumer;
-import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
-import org.springframework.amqp.rabbit.connection.ConnectionFactory;
+import org.springframework.amqp.rabbit.config.SimpleRabbitListenerContainerFactory;
+import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
+import org.springframework.amqp.rabbit.core.RabbitAdmin;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
-import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
-import org.springframework.amqp.rabbit.support.DefaultMessagePropertiesConverter;
-import org.springframework.amqp.rabbit.support.MessagePropertiesConverter;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.amqp.SimpleRabbitListenerContainerFactoryConfigurer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
 
 /**
  * @program: products
@@ -39,8 +38,7 @@ public class RabbitMqConfig {
     /**
      * 连接工厂
      */
-    @Autowired
-    private ConnectionFactory connectionFactory;
+
 
     /**
      将消息队列1和交换机进行绑定
@@ -62,26 +60,27 @@ public class RabbitMqConfig {
                 .with(responseProductsQueueRoutingKey);
     }
 
-    /**
-     * queue listener  观察 监听模式
-     * 当有消息到达时会通知监听在对应的队列上的监听对象
-     * @return
-     */
     @Bean
-    public SimpleMessageListenerContainer simpleMessageListenerContainer(){
-        SimpleMessageListenerContainer simpleMessageListenerContainer = new SimpleMessageListenerContainer(connectionFactory);
-        simpleMessageListenerContainer.addQueues(queueConfig.requestProductsQueue());
-        simpleMessageListenerContainer.setMessageListener(new MessageListenerAdapter(new FirstConsumer()));
-        simpleMessageListenerContainer.setExposeListenerChannel(true);
-        /** 300个线程的线程池 */
-        //ExecutorService executorService= Executors.newFixedThreadPool(300);
-        //simpleMessageListenerContainer.setTaskExecutor(executorService);
+    public CachingConnectionFactory rabbitConnectionFactory() {
+        CachingConnectionFactory cachingConnectionFactory = new CachingConnectionFactory();
+        cachingConnectionFactory.setAddresses("193.112.35.196:5672");
+        cachingConnectionFactory.setUsername("guest");
+        cachingConnectionFactory.setPassword("guest");
+        cachingConnectionFactory.setChannelCacheSize(10);
+        cachingConnectionFactory.setConnectionLimit(3);
+        cachingConnectionFactory.setConnectionTimeout(30000);
+        cachingConnectionFactory.setPublisherConfirms(true);
+        cachingConnectionFactory.setPublisherReturns(true);
+        return cachingConnectionFactory;
+    }
 
-        simpleMessageListenerContainer.setMaxConcurrentConsumers(5);
-        simpleMessageListenerContainer.setConcurrentConsumers(1);
-        /** 设置确认模式手工确认 */
-        simpleMessageListenerContainer.setAcknowledgeMode(AcknowledgeMode.MANUAL);
-        return simpleMessageListenerContainer;
+    @Bean
+    public SimpleRabbitListenerContainerFactory containerFactory(SimpleRabbitListenerContainerFactoryConfigurer configurer){
+        SimpleRabbitListenerContainerFactory factory=new SimpleRabbitListenerContainerFactory();
+        factory.setConcurrentConsumers(500);
+        factory.setPrefetchCount(5);
+        configurer.configure(factory,rabbitConnectionFactory());
+        return factory;
     }
 
     /**
@@ -91,7 +90,7 @@ public class RabbitMqConfig {
     @Bean
     public RabbitTemplate rabbitTemplate() {
 
-        RabbitTemplate template = new RabbitTemplate(connectionFactory);
+        RabbitTemplate template = new RabbitTemplate(rabbitConnectionFactory());
 
         /**若使用confirm-callback或return-callback，
          * 必须要配置publisherConfirms或publisherReturns为true
@@ -138,6 +137,8 @@ public class RabbitMqConfig {
         return new MsgSendReturnCallback();
     }
 
-
-
+    @Bean
+    public RabbitAdmin admin() {
+        return new RabbitAdmin(rabbitConnectionFactory());
+    }
 }

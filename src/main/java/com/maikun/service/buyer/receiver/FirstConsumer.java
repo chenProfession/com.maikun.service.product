@@ -1,12 +1,12 @@
 package com.maikun.service.buyer.receiver;
 
-import com.maikun.service.buyer.asynctask.DeferredResultHolder;
+import com.maikun.service.buyer.asynctask.DeferredResultService;
 import com.maikun.service.buyer.result.ResultService;
 import com.maikun.service.buyer.result.ResultVO;
 import com.rabbitmq.client.Channel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.Message;
-import org.springframework.amqp.rabbit.core.ChannelAwareMessageListener;
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -18,10 +18,10 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Slf4j
-public class FirstConsumer implements ChannelAwareMessageListener {
+public class FirstConsumer {
 
     @Autowired
-    private DeferredResultHolder deferredResultHolder;
+    private DeferredResultService deferredResultService;
 
     @Autowired
     private ResultService resultService;
@@ -35,22 +35,20 @@ public class FirstConsumer implements ChannelAwareMessageListener {
      * @param channel the underlying Rabbit Channel (never <code>null</code>)
      * @throws Exception Any.
      */
-    @Override
-    public void onMessage(Message message, Channel channel) throws Exception {
+    @RabbitListener(queues = "requestProductsQueue", containerFactory = "containerFactory")
+    public void processMessage(Message message, Channel channel) throws Exception {
         /** 处理消息 */
-        log.info("FirstConsumer handleMessage :[{}]",message);
+        log.info("FirstConsumer handleMessage :[{}]",message.getBody().toString());
 
         /** 查找对应商店ID的产品列表 */
         log.info("根据商店ID查找产品列表 :[{}]");
-        ResultVO resultVO = new ResultVO();
-        resultVO.setCode(0);
-        resultVO.setMsg("success");
+        ResultVO resultVO = resultService.success();
 
         /** 获取对应用户的DeferredResult */
-        log.info("发出请求用户 :[{}]",message.getMessageProperties().getCorrelationId());
+        if(deferredResultService.makeDeferredResult(message.getMessageProperties().getCorrelationId(),resultVO)){
+            log.info("set the result");
+        }
 
-        deferredResultHolder.getMap().get(message.getMessageProperties().getCorrelationId())
-                .setResult(resultVO);
         /**
          * 那么当收到消息后，如果要否认，或确认则通过调用channel对象的下面的两个方法即可,
          * 其中basicAck进行确认,

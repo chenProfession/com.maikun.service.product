@@ -38,8 +38,6 @@ public class HelloWorldController {
     @Autowired
     private FirstSender firstSender;
 
-    @Autowired
-    private DeferredResultHolder deferredResultHolder;
 
     /**
     * @Description: 测试服务是否可以正常运行
@@ -89,20 +87,19 @@ public class HelloWorldController {
     * @Author: Mr.Cheng
     * @Date: 2018/9/17 下午11:20
     */
-    @GetMapping(path = "/")
+    @GetMapping(path = "/async-order")
     public DeferredResult<ResultVO> readList(){
         log.info("外部线程：[{}]",Thread.currentThread().getName());
         /** 模拟用户ID */
         String uuid = UUID.randomUUID().toString();
+        log.info("得到用户ID ：[{}]",uuid);
 
         /** 模拟用户ID */
         String restaurantId = "daWeiWang";
+        /** 设置timeout时间 */
+        DeferredResult<ResultVO> result = new DeferredResult<>(30000L);
 
-        firstSender.send(uuid,restaurantId);
-
-        DeferredResult<ResultVO> result = new DeferredResult<ResultVO>();
-
-        deferredResultHolder.getMap().put(uuid,result);
+        firstSender.send(uuid,result,restaurantId);
 
         return result;
     }

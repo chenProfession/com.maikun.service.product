@@ -1,13 +1,14 @@
 package com.maikun.service.buyer.asynctask;
 
 import com.maikun.service.buyer.result.ResultVO;
-import lombok.Data;
+
+import lombok.Getter;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.async.DeferredResult;
 
-import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.ConcurrentSkipListMap;
+import java.util.concurrent.ConcurrentHashMap;
+
 
 /**
  * @program: products
@@ -16,8 +17,11 @@ import java.util.concurrent.ConcurrentSkipListMap;
  * @date: 2018/9/25 上午12:52
  */
 @Component
-@Data
+@Getter
 public class DeferredResultHolder {
-    Map<String,DeferredResult<ResultVO>> map = new HashMap<>();
+    private Map<String,DeferredResult<ResultVO>> map;
 
+    public DeferredResultHolder(){
+        map = new ConcurrentHashMap<>();
+    }
 }
