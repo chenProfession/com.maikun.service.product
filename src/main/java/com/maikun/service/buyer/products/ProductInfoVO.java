@@ -1,4 +1,4 @@
-package com.maikun.service.buyer.productinfo;
+package com.maikun.service.buyer.products;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

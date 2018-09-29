@@ -23,16 +23,22 @@ spring:
 
 
   jpa:
+    database: MySQL
     hibernate:
       ddl-auto: update
     show-sql: true
+    # Hibernate默认创建的表是myisam引擎，而不是innodb
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    properties:
+      hibernate:
+        dialect: com.maikun.service.buyer.configuration.MySQL5DialectUTF8
   jackson:
       default-property-inclusion: non_null
   datasource:
-      #driver-class-name: com.mysql.jdbc.Driver
-      username: chen
-      password: hsbc
-      url: jdbc:mysql://193.112.35.196:3306/ordersys?characterEncoding=utf-8&useSSL=false
+      driver-class-name: com.mysql.jdbc.Driver
+      username: grass
+      password: mooncake
+      url: jdbc:mysql://193.112.35.196:3306/product?characterEncoding=utf-8&useSSL=false
 
 #RabbitMQ Exchang and Queue name
 mq:

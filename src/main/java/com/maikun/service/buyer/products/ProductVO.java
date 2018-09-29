@@ -1,7 +1,6 @@
 package com.maikun.service.buyer.products;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.maikun.service.buyer.productinfo.ProductInfoVO;
 
 import java.io.Serializable;
 import java.util.List;
