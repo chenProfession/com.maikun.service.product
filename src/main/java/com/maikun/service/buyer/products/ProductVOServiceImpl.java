@@ -1,6 +1,7 @@
 package com.maikun.service.buyer.products;
 
 import com.maikun.service.buyer.productcategory.ProductCategory;
+import com.maikun.service.buyer.productcategory.ProductCategoryService;
 import com.maikun.service.buyer.productinfo.ProductInfo;
 import com.maikun.service.buyer.productinfo.ProductInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,10 @@ public class ProductVOServiceImpl implements ProductVOService {
 
     @Autowired
     private ProductInfoService productInfoService;
+
+    @Autowired
+    private ProductCategoryService productCategoryService;
+
     /**
      * @param productInfo
      * @Description: 从产品详情转换成产品图示
@@ -76,7 +81,6 @@ public class ProductVOServiceImpl implements ProductVOService {
 
     /**
      * @param productCategoryList
-     * @param productInfoVOList
      * @Description: 给用户展示产品列表
      * @Param: [productCategoryList, productInfoVOList]
      * @return: java.util.List<com.maikun.service.buyer.products.ProductVO>
@@ -84,8 +88,22 @@ public class ProductVOServiceImpl implements ProductVOService {
      * @Date: 2018/9/15 下午9:16
      */
     @Override
-    public List<ProductVO> makeProductVOList(List<ProductCategory> productCategoryList, List<ProductInfoVO> productInfoVOList) {
+    public List<ProductVO> makeProductVOList(List<ProductCategory> productCategoryList) {
         List<ProductVO> productVOList = new ArrayList();
+        Iterator<ProductCategory> iteratorProductCategory = productCategoryList.iterator();
+        while(iteratorProductCategory.hasNext()){
+            ProductCategory productCategory = iteratorProductCategory.next();
+            ProductVO productVO = new ProductVO();
+            productVO.setCategoryType(productCategory.getCategoryType());
+            productVO.setCategoryName(productCategory.getCategoryName());
+
+            List<ProductInfoVO> productInfoVOList = makeProductInfoVOListFromProductInfo(productInfoService
+                    .productInfoVOListOfRestaurantByCategory(productCategory.getRestaurantId(),
+                            productCategory.getCategoryType()));
+            productVO.setProductInfoVOList(productInfoVOList);
+
+            productVOList.add(productVO);
+        }
 
         return productVOList;
     }

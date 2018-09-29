@@ -1,5 +1,6 @@
 package com.maikun.service.buyer.productinfo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,6 +13,9 @@ import java.util.List;
  */
 @Service
 public class ProductInfoServiceImpl implements ProductInfoService {
+
+    @Autowired
+    private ProductInfoRepository productInfoRepository;
 
     /**
      * @Description: 获取产品详细列表
@@ -36,5 +40,19 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     @Override
     public ProductInfo productInfoDetail(String productId) {
         return null;
+    }
+
+    /**
+     * @param restaurantId
+     * @param categoryType
+     * @Description: 获取相关商店产品前端展示列表
+     * @Param: [restaurantId, categoryType]
+     * @return: java.util.List<com.maikun.service.buyer.productinfo.ProductInfo>
+     * @Author: Mr.Cheng
+     * @Date: 2018/9/30 上午1:43
+     */
+    @Override
+    public List<ProductInfo> productInfoVOListOfRestaurantByCategory(String restaurantId, Integer categoryType) {
+        return productInfoRepository.findProductInfoVOByRestaurantIdAndCategoryType(restaurantId,categoryType);
     }
 }

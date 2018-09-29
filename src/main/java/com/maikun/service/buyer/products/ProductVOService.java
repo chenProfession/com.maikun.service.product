@@ -47,6 +47,6 @@ public interface ProductVOService {
     * @Author: Mr.Cheng
     * @Date: 2018/9/15 下午9:16
     */
-    List<ProductVO> makeProductVOList(List<ProductCategory> productCategoryList,List<ProductInfoVO> productInfoVOList);
+    List<ProductVO> makeProductVOList(List<ProductCategory> productCategoryList);
 
 }

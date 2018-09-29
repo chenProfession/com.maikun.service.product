@@ -1,6 +1,7 @@
 package com.maikun.service.buyer.products;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
  * @author: Mr.Cheng
  * @date: 2018/9/11 下午3:58
  */
+@Data
 public class ProductVO implements Serializable {
 
     private static final long serialVersionUID = 7360896644410585816L;
