@@ -5,6 +5,7 @@ import com.maikun.service.buyer.productcategory.ProductCategoryService;
 import com.maikun.service.buyer.productinfo.ProductInfo;
 import com.maikun.service.buyer.productinfo.ProductInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

@@ -20,18 +20,30 @@ public class ProductCategoryRepositoryTest {
     private ProductCategoryRepository productCategoryRepository;
 
     @Test
-    public void findAllByRestaurantId() throws Exception {
+    public void testFindAllByRestaurantId() throws Exception {
         List<ProductCategory> productCategoryList = productCategoryRepository.findAllByRestaurantId("baiyun-01");
         log.info(productCategoryList.toString());
         Assert.assertNotNull(productCategoryList);
     }
 
     @Test
-    public void saveCategory() throws Exception {
+    public void testSaveCategory() throws Exception {
         ProductCategory productCategory = new ProductCategory();
         productCategory.setCategoryName("木桶饭");
         productCategory.setRestaurantId("jiao-xin-mu-tong");
         productCategory.setCategoryType(0);
         Assert.assertNotNull(productCategoryRepository.saveAndFlush(productCategory));
+    }
+
+    @Test
+    public void testFindTopByOrOrderByRestaurantId() throws Exception {
+        ProductCategory productCategory = productCategoryRepository
+                .findTopByRestaurantIdOrderByCategoryType("baiyun-01");
+        log.info(productCategory.toString());
+        Assert.assertNotNull(productCategory);
+
+        ProductCategory productCategoryNull = productCategoryRepository
+                .findTopByRestaurantIdOrderByCategoryType("baiyun-null");
+        Assert.assertNull(productCategoryNull);
     }
 }

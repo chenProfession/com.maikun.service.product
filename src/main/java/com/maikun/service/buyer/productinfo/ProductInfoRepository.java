@@ -21,4 +21,6 @@ public interface ProductInfoRepository extends JpaRepository<ProductInfo, String
     @Transactional(timeout = 10)
     @Query(value = "select new ProductInfo(p.productId,p.productName,p.productPrice,p.productDescription,p.productIcon) from ProductInfo p where p.restaurantId=?1 and p.categoryType=?2")
     List<ProductInfo> findProductInfoVOByRestaurantIdAndCategoryType(String restaurantId, Integer categoryType);
+
+    ProductInfo findTopByRestaurantIdOrderByCategoryType(String restaurantId);
 }

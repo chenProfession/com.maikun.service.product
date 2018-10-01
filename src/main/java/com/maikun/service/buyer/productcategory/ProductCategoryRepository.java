@@ -16,4 +16,6 @@ public interface ProductCategoryRepository extends JpaRepository<ProductCategory
     * @Date: 2018/9/30 上午2:14
     */
     List<ProductCategory> findAllByRestaurantId(String restaurantId);
+
+    ProductCategory findTopByRestaurantIdOrderByCategoryType(String restaurantId);
 }

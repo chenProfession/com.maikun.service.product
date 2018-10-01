@@ -20,8 +20,12 @@ spring:
       # 开启ACK
       #listener.direct.acknowledge-mode=manual
       #listener.simple.acknowledge-mode=manual
-
-
+  redis:
+      host: 193.112.35.196
+      port: 6379
+      password:
+      pool:
+      timeout: 5000
   jpa:
     database: MySQL
     hibernate:

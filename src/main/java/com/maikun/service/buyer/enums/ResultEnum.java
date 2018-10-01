@@ -50,6 +50,8 @@ public enum ResultEnum {
     LOGOUT_SUCCESS(26, "登出成功"),
 
     FAILED(27, "失败"),
+
+    RESTAURANT_NOT_EXIST(28, "商店不存在"),
             ;
 
     private Integer code;

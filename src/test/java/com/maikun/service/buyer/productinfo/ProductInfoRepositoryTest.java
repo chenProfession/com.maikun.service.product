@@ -27,7 +27,7 @@ public class ProductInfoRepositoryTest {
     }
 
     @Test
-    public void findByRestaurantIdAndCategoryType() throws Exception {
+    public void testFindByRestaurantIdAndCategoryType() throws Exception {
        List<ProductInfo> productInfoList = productInfoRepository
                .findAllByRestaurantIdAndCategoryType("baiyun-01",0);
        log.info(productInfoList.toString());
@@ -35,7 +35,7 @@ public class ProductInfoRepositoryTest {
     }
 
     @Test
-    public void findProductInfoVOByRestaurantIdAndCategoryType() throws Exception {
+    public void testFindProductInfoVOByRestaurantIdAndCategoryType() throws Exception {
         List<ProductInfo> productInfoList = productInfoRepository
                 .findProductInfoVOByRestaurantIdAndCategoryType("baiyun-01",0);
         log.info(productInfoList.get(0).toString());
@@ -44,7 +44,7 @@ public class ProductInfoRepositoryTest {
     }
 
     @Test
-    public void saveProductInfo() throws Exception {
+    public void testSaveProductInfo() throws Exception {
         ProductInfo productInfo = new ProductInfo();
         productInfo.setProductId("jiaoxin-02");
         productInfo.setRestaurantId("baiyun-01");
@@ -56,6 +56,16 @@ public class ProductInfoRepositoryTest {
         //productInfo.setProductStatus(0);
         productInfo.setProductStock(30);
         Assert.assertNotNull(productInfoRepository.saveAndFlush(productInfo));
+    }
+
+    @Test
+    public void testFindTopByRestaurantIdOrderByCategoryType() throws Exception {
+        ProductInfo productInfo = productInfoRepository
+                .findTopByRestaurantIdOrderByCategoryType("baiyun-01");
+        Assert.assertNotNull(productInfo);
+        ProductInfo productInfoNull = productInfoRepository
+                .findTopByRestaurantIdOrderByCategoryType("baiyun-null");
+        Assert.assertNull(productInfoNull);
     }
 
 }

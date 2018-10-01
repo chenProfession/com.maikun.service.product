@@ -2,15 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="423b1897-763c-4c71-9d58-69d966f74d01" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/products/ProductVOServiceImplTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_0_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_25_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_25_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_25_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_25_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_25_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_25_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_1_8_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_0_3_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_0_8_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_0_8_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_0_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/configuration/RedisConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productinfo/ProductInfoServiceImplTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/helloworld.log" afterPath="$PROJECT_DIR$/helloworld.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategoryServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategoryServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/products.iml" afterPath="$PROJECT_DIR$/products.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/BuyerApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/BuyerApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/enums/ResultEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/enums/ResultEnum.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategoryRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategoryRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoService.java" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVO.java" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVOService.java" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVOService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProdcutVOController.java" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProdcutVOController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductInfoVO.java" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductInfoVO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVOServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVOServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application-dev.yml" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productcategory/ProductCategoryRepositoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productcategory/ProductCategoryRepositoryTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productinfo/ProductInfoRepositoryTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productinfo/ProductInfoRepositoryTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,21 +76,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductVOServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVOServiceImpl.java">
+      <file leaf-file-name="ProdcutVOController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProdcutVOController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="102" column="62" lean-forward="false" selection-start-line="102" selection-start-column="62" selection-end-line="102" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductVOServiceImplTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/products/ProductVOServiceImplTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="41" column="42" lean-forward="false" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+            <state relative-caret-position="212">
+              <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,21 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductInfoServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoServiceImpl.java">
+      <file leaf-file-name="RedisConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/configuration/RedisConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="55" column="111" lean-forward="false" selection-start-line="55" selection-start-column="111" selection-end-line="55" selection-end-column="111" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductInfoRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="1785">
+              <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,54 +100,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductInfoService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductCategoryRepositoryTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productcategory/ProductCategoryRepositoryTest.java">
+      <file leaf-file-name="BuyerApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/BuyerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="23" column="111" lean-forward="false" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="111" />
+              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductVO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductVOService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVOService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="49" column="81" lean-forward="false" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProductCategory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="31" column="52" lean-forward="false" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -152,11 +113,29 @@
       <file leaf-file-name="ProductCategoryRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategoryRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-dev.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1855">
+              <caret line="112" column="67" lean-forward="false" selection-start-line="112" selection-start-column="67" selection-end-line="112" selection-end-column="67" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -168,15 +147,19 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>ConnectionFactory</find>
+      <find>log</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -186,11 +169,12 @@
       <projects_view />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response25.json" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/enums/ProductStatusEnum.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/BuyerApplicationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/result/ResultVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductService.java" />
@@ -207,7 +191,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/configuration/MsgSendConfirmCallBack.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/configuration/RabbitMqConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/sender/FirstSender.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/enums/ResultEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/result/ResultServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/result/ResultService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/receiver/FirstConsumer.java" />
@@ -217,29 +200,32 @@
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/asynctask/CompletionWork.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/helloworld/HelloWorldController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/listener/ProductsConsumer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProdcutVOController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductInfoVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/BuyerApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductRepository.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productcategory/ProductRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategory.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/restaurant/Restaurant.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/configuration/MySQL5DialectUTF8.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productinfo/ProductInfoRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategoryRepository.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productcategory/ProductCategoryRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategoryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategoryServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVOService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVO.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/products/ProductVOServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategoryRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productcategory/ProductCategoryRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productinfo/ProductInfoRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productinfo/ProductInfoServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/enums/ResultEnum.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/BuyerApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductInfoVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVOServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/products/ProductVOServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/configuration/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProdcutVOController.java" />
       </list>
     </option>
   </component>
@@ -263,15 +249,19 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="product" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="product" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="336" />
-    <option name="y" value="161" />
-    <option name="width" value="80" />
-    <option name="height" value="22" />
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="716" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -289,8 +279,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -334,6 +322,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="buyer" type="462c0819:PsiDirectoryNode" />
               <item name="configuration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="products" type="b2602c69:ProjectViewProjectNode" />
+              <item name="products" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="buyer" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="products" type="b2602c69:ProjectViewProjectNode" />
@@ -448,13 +445,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelWidth1" value="75" />
@@ -465,9 +464,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.maikun.service.buyer.productinfo" />
       <recent name="com.maikun.service.buyer.products" />
       <recent name="com.maikun.service.buyer.productcategory" />
-      <recent name="com.maikun.service.buyer.productinfo" />
       <recent name="com.maikun.service.buyer" />
       <recent name="com.maikun.service.buyer.helloworld" />
     </key>
@@ -478,6 +477,145 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/maikun/buyer/products/list" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="restaurantId" />
+                <option name="value" value="baiyun-01" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/maikun/buyer/products/list" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="restaurantId" />
+                <option name="value" value="baiyun-01" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/maikun/buyer/products/list" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="restaurantId" />
+                <option name="value" value="hjhjhj" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/maikun/buyer/products/list" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="restaurantId" />
+                <option name="value" value="" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/maikun/buyer/products/list" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="restaurantId" />
+                <option name="value" value="baiyun-01" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:8080" />
@@ -729,8 +867,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductVOServiceImplTest.makeProductInfoVOListByCategory">
-    <configuration name="ProductCategoryRepositoryTest.findAllByRestaurantId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.BuyerApplication">
+    <configuration name="BuyerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.maikun.service.buyer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.maikun.service.buyer.BuyerApplication" />
+      <module name="products" />
+      <envs />
+    </configuration>
+    <configuration name="ProductCategoryRepositoryTest.testFindTopByOrOrderByRestaurantId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.maikun.service.buyer.productcategory.*" />
@@ -742,7 +891,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.maikun.service.buyer.productcategory" />
       <option name="MAIN_CLASS_NAME" value="com.maikun.service.buyer.productcategory.ProductCategoryRepositoryTest" />
-      <option name="METHOD_NAME" value="findAllByRestaurantId" />
+      <option name="METHOD_NAME" value="testFindTopByOrOrderByRestaurantId" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -755,7 +904,32 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ProductInfoRepositoryTest.findByRestaurantIdAndCategoryType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductCategoryRepositoryTest.testSaveCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.maikun.service.buyer.productcategory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="products" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.maikun.service.buyer.productcategory" />
+      <option name="MAIN_CLASS_NAME" value="com.maikun.service.buyer.productcategory.ProductCategoryRepositoryTest" />
+      <option name="METHOD_NAME" value="testSaveCategory" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ProductInfoRepositoryTest.testFindTopByRestaurantIdOrderByCategoryType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.maikun.service.buyer.productinfo.*" />
@@ -767,7 +941,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.maikun.service.buyer.productinfo" />
       <option name="MAIN_CLASS_NAME" value="com.maikun.service.buyer.productinfo.ProductInfoRepositoryTest" />
-      <option name="METHOD_NAME" value="findByRestaurantIdAndCategoryType" />
+      <option name="METHOD_NAME" value="testFindTopByRestaurantIdOrderByCategoryType" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -780,7 +954,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ProductInfoRepositoryTest.findProductInfoVOByRestaurantIdAndCategoryType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductInfoServiceImplTest.testCheckRestaurantViaProductInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.maikun.service.buyer.productinfo.*" />
@@ -791,58 +965,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.maikun.service.buyer.productinfo" />
-      <option name="MAIN_CLASS_NAME" value="com.maikun.service.buyer.productinfo.ProductInfoRepositoryTest" />
-      <option name="METHOD_NAME" value="findProductInfoVOByRestaurantIdAndCategoryType" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ProductInfoRepositoryTest.saveProductInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.maikun.service.buyer.productinfo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="products" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.maikun.service.buyer.productinfo" />
-      <option name="MAIN_CLASS_NAME" value="com.maikun.service.buyer.productinfo.ProductInfoRepositoryTest" />
-      <option name="METHOD_NAME" value="saveProductInfo" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="ProductVOServiceImplTest.makeProductInfoVOListByCategory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.maikun.service.buyer.products.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="products" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.maikun.service.buyer.products" />
-      <option name="MAIN_CLASS_NAME" value="com.maikun.service.buyer.products.ProductVOServiceImplTest" />
-      <option name="METHOD_NAME" value="makeProductInfoVOListByCategory" />
+      <option name="MAIN_CLASS_NAME" value="com.maikun.service.buyer.productinfo.ProductInfoServiceImplTest" />
+      <option name="METHOD_NAME" value="testCheckRestaurantViaProductInfo" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -937,19 +1061,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ProductInfoRepositoryTest.saveProductInfo" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ProductInfoRepositoryTest.findByRestaurantIdAndCategoryType" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ProductInfoRepositoryTest.findProductInfoVOByRestaurantIdAndCategoryType" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ProductCategoryRepositoryTest.findAllByRestaurantId" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ProductVOServiceImplTest.makeProductInfoVOListByCategory" />
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.BuyerApplication" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ProductCategoryRepositoryTest.testSaveCategory" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ProductCategoryRepositoryTest.testFindTopByOrOrderByRestaurantId" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ProductInfoRepositoryTest.testFindTopByRestaurantIdOrderByCategoryType" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ProductInfoServiceImplTest.testCheckRestaurantViaProductInfo" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ProductVOServiceImplTest.makeProductInfoVOListByCategory" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ProductCategoryRepositoryTest.findAllByRestaurantId" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ProductInfoRepositoryTest.findProductInfoVOByRestaurantIdAndCategoryType" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ProductInfoRepositoryTest.findByRestaurantIdAndCategoryType" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ProductInfoRepositoryTest.saveProductInfo" />
+        <item index="0" class="java.lang.String" itemvalue="Spring Boot.BuyerApplication" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ProductInfoServiceImplTest.testCheckRestaurantViaProductInfo" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ProductInfoRepositoryTest.testFindTopByRestaurantIdOrderByCategoryType" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ProductCategoryRepositoryTest.testFindTopByOrOrderByRestaurantId" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ProductCategoryRepositoryTest.testSaveCategory" />
       </list>
     </recent_temporary>
   </component>
@@ -993,83 +1117,112 @@
       <workItem from="1538098135192" duration="1101000" />
       <workItem from="1538105909162" duration="77000" />
       <workItem from="1538120454406" duration="3189000" />
-      <workItem from="1538202040803" duration="18744000" />
+      <workItem from="1538202040803" duration="28009000" />
+      <workItem from="1538322111325" duration="875000" />
+      <workItem from="1538416899345" duration="2673000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductCategoryRepositoryTest_findAllByRestaurantId - 2018.09.30 at 00h 28m 26s.xml">
-      <configuration name="ProductCategoryRepositoryTest.findAllByRestaurantId" configurationId="JUnit" />
+    <history-entry file="ProductCategoryRepositoryTest_testFindTopByOrOrderByRestaurantId - 2018.09.30 at 03h 08m 44s.xml">
+      <configuration name="ProductCategoryRepositoryTest.testFindTopByOrOrderByRestaurantId" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductInfoRepositoryTest_findByRestaurantIdAndCategoryType - 2018.09.29 at 23h 19m 50s.xml">
-      <configuration name="ProductInfoRepositoryTest.findByRestaurantIdAndCategoryType" configurationId="JUnit" />
+    <history-entry file="ProductCategoryRepositoryTest_testSaveCategory - 2018.09.30 at 02h 56m 17s.xml">
+      <configuration name="ProductCategoryRepositoryTest.testSaveCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductInfoRepositoryTest_findProductInfoVOByRestaurantIdAndCategoryType - 2018.09.29 at 23h 38m 37s.xml">
-      <configuration name="ProductInfoRepositoryTest.findProductInfoVOByRestaurantIdAndCategoryType" configurationId="JUnit" />
+    <history-entry file="ProductCategoryRepositoryTest_testSaveCategory - 2018.09.30 at 02h 59m 37s.xml">
+      <configuration name="ProductCategoryRepositoryTest.testSaveCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductInfoRepositoryTest_findProductInfoVOByRestaurantIdAndCategoryType - 2018.09.29 at 23h 48m 03s.xml">
-      <configuration name="ProductInfoRepositoryTest.findProductInfoVOByRestaurantIdAndCategoryType" configurationId="JUnit" />
+    <history-entry file="ProductCategoryRepositoryTest_testSaveCategory - 2018.09.30 at 03h 05m 56s.xml">
+      <configuration name="ProductCategoryRepositoryTest.testSaveCategory" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductInfoRepositoryTest_findProductInfoVOByRestaurantIdAndCategoryType - 2018.09.29 at 23h 51m 35s.xml">
-      <configuration name="ProductInfoRepositoryTest.findProductInfoVOByRestaurantIdAndCategoryType" configurationId="JUnit" />
+    <history-entry file="ProductInfoRepositoryTest_testFindTopByRestaurantIdOrderByCategoryType - 2018.09.30 at 03h 15m 19s.xml">
+      <configuration name="ProductInfoRepositoryTest.testFindTopByRestaurantIdOrderByCategoryType" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductInfoRepositoryTest_findProductInfoVOByRestaurantIdAndCategoryType - 2018.09.29 at 23h 59m 10s.xml">
-      <configuration name="ProductInfoRepositoryTest.findProductInfoVOByRestaurantIdAndCategoryType" configurationId="JUnit" />
+    <history-entry file="ProductInfoRepositoryTest_testFindTopByRestaurantIdOrderByCategoryType - 2018.09.30 at 03h 16m 38s.xml">
+      <configuration name="ProductInfoRepositoryTest.testFindTopByRestaurantIdOrderByCategoryType" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductInfoRepositoryTest_findProductInfoVOByRestaurantIdAndCategoryType - 2018.09.30 at 00h 01m 43s.xml">
-      <configuration name="ProductInfoRepositoryTest.findProductInfoVOByRestaurantIdAndCategoryType" configurationId="JUnit" />
+    <history-entry file="ProductInfoServiceImplTest_testCheckRestaurantViaProductInfo - 2018.09.30 at 03h 32m 57s.xml">
+      <configuration name="ProductInfoServiceImplTest.testCheckRestaurantViaProductInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductInfoRepositoryTest_findProductInfoVOByRestaurantIdAndCategoryType - 2018.09.30 at 00h 06m 09s.xml">
-      <configuration name="ProductInfoRepositoryTest.findProductInfoVOByRestaurantIdAndCategoryType" configurationId="JUnit" />
+    <history-entry file="ProductInfoServiceImplTest_testCheckRestaurantViaProductInfo - 2018.09.30 at 03h 35m 34s.xml">
+      <configuration name="ProductInfoServiceImplTest.testCheckRestaurantViaProductInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductInfoRepositoryTest_findProductInfoVOByRestaurantIdAndCategoryType - 2018.09.30 at 00h 15m 19s.xml">
-      <configuration name="ProductInfoRepositoryTest.findProductInfoVOByRestaurantIdAndCategoryType" configurationId="JUnit" />
+    <history-entry file="ProductInfoServiceImplTest_testCheckRestaurantViaProductInfo - 2018.09.30 at 03h 37m 14s.xml">
+      <configuration name="ProductInfoServiceImplTest.testCheckRestaurantViaProductInfo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ProductVOServiceImplTest_makeProductInfoVOListByCategory - 2018.09.30 at 02h 03m 47s.xml">
+    <history-entry file="ProductVOServiceImplTest_makeProductInfoVOListByCategory - 2018.09.30 at 02h 10m 07s.xml">
       <configuration name="ProductVOServiceImplTest.makeProductInfoVOListByCategory" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139525000" />
+    <option name="totallyTimeSpent" value="152338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2197092" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52337396" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.59375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3877841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77840906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6036932" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19547658" sideWeight="0.49148935" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16801292" sideWeight="0.49148935" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2197092" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328125" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1825525" sideWeight="0.50851065" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52337396" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33238637" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="BEK_SORT_TYPE" value="1" />
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1081,48 +1234,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/enums/ResultEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="51" column="18" lean-forward="false" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/result/ResultServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="879">
-          <caret line="74" column="41" lean-forward="false" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/result/ResultService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/asynctask/DeferredResultHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="21" column="47" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/sender/ProductsSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="43" column="106" lean-forward="false" selection-start-line="43" selection-start-column="106" selection-end-line="43" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/asynctask/TimeOutWork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/configuration/RabbitMqConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -1172,47 +1283,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProdcutVOController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/BuyerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#545#546#0" expanded="false" />
-            <element signature="e#612#613#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productcategory/ProductRepositoryTest.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f6a36211-b1ad-411c-9e37-9faf5eb0144e/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="104" column="21" lean-forward="false" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="44" column="44" lean-forward="false" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1319,10 +1394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="43" lean-forward="false" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
-          <folding>
-            <element signature="e#336#337#0" expanded="false" />
-            <element signature="e#396#397#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1330,22 +1401,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductInfoVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="42" lean-forward="true" selection-start-line="0" selection-start-column="42" selection-end-line="0" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="79" column="134" lean-forward="false" selection-start-line="79" selection-start-column="134" selection-end-line="79" selection-end-column="134" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1370,18 +1425,23 @@
         <state relative-caret-position="510">
           <caret line="30" column="5" lean-forward="false" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategoryRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/result/ResultService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="47" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="549">
+          <caret line="42" column="30" lean-forward="true" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/products/ProductVOServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="38" column="57" lean-forward="false" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1389,16 +1449,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="31" column="52" lean-forward="false" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productcategory/ProductCategoryRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="46" column="45" lean-forward="false" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productinfo/ProductInfoServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="35" column="55" lean-forward="false" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVOService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
-          <caret line="49" column="81" lean-forward="false" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
+          <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productinfo/ProductInfoRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="39" column="75" lean-forward="false" selection-start-line="39" selection-start-column="64" selection-end-line="39" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="6" lean-forward="true" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1406,65 +1498,125 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/enums/ProductStatusEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+        <state relative-caret-position="85">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfoServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productinfo/ProductInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="55" column="111" lean-forward="false" selection-start-line="55" selection-start-column="111" selection-end-line="55" selection-end-column="111" />
+        <state relative-caret-position="519">
+          <caret line="79" column="134" lean-forward="false" selection-start-line="79" selection-start-column="134" selection-end-line="79" selection-end-column="134" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/enums/ResultEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="51" column="21" lean-forward="false" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/productcategory/ProductCategoryRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVOService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="49" column="81" lean-forward="false" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductInfoVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productinfo/ProductInfoRepositoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/result/ResultVO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="28" />
+        <state relative-caret-position="106">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProductVOServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="102" column="62" lean-forward="false" selection-start-line="102" selection-start-column="62" selection-end-line="102" selection-end-column="62" />
-          <folding />
+        <state relative-caret-position="355">
+          <caret line="36" column="7" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/productcategory/ProductCategoryRepositoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/BuyerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="23" column="111" lean-forward="false" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="111" />
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/maikun/service/buyer/products/ProductVOServiceImplTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="41" column="42" lean-forward="false" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+        <state relative-caret-position="310">
+          <caret line="26" column="11" lean-forward="false" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1855">
+          <caret line="112" column="67" lean-forward="false" selection-start-line="112" selection-start-column="67" selection-end-line="112" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/configuration/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/maikun/service/buyer/products/ProdcutVOController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

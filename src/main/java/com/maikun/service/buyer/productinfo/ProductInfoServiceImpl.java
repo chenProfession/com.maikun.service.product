@@ -2,6 +2,7 @@ package com.maikun.service.buyer.productinfo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
 
@@ -54,5 +55,22 @@ public class ProductInfoServiceImpl implements ProductInfoService {
     @Override
     public List<ProductInfo> productInfoVOListOfRestaurantByCategory(String restaurantId, Integer categoryType) {
         return productInfoRepository.findProductInfoVOByRestaurantIdAndCategoryType(restaurantId,categoryType);
+    }
+
+    /**
+     * @param restaurantId
+     * @Description: 通过获取产品信息判断是否存在这个商店,1为查到，0为无
+     * @Param: [restaurantId]
+     * @return: java.lang.Integer
+     * @Author: Mr.Cheng
+     * @Date: 2018/9/30 上午3:19
+     */
+    @Override
+    public Integer checkRestaurantViaProductInfo(String restaurantId) {
+        Integer productCount = 0;
+        if(productInfoRepository.findTopByRestaurantIdOrderByCategoryType(restaurantId) != null){
+            productCount = 1;
+        }
+        return productCount;
     }
 }

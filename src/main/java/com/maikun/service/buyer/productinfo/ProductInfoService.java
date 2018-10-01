@@ -36,4 +36,13 @@ public interface ProductInfoService {
     * @Date: 2018/9/30 上午1:43
     */
     List<ProductInfo> productInfoVOListOfRestaurantByCategory(String restaurantId, Integer categoryType);
+
+    /**
+    * @Description: 通过获取产品信息判断是否存在这个商店
+    * @Param: [restaurantId]
+    * @return: java.lang.Integer
+    * @Author: Mr.Cheng
+    * @Date: 2018/9/30 上午3:19
+    */
+    Integer checkRestaurantViaProductInfo(String restaurantId);
 }
